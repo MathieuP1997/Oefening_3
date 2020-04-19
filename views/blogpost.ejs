@@ -1,0 +1,16 @@
+<h2><%=postsArray[i].name %></h2>
+<h3><%=postsArray[i].date %></h3>
+<br>
+<h3><%=postsArray[i].subtitle %></h3>
+<h4><%=postsArray[i].excerpt %></h4>
+<h4 class="author"><%=postsArray[i].author %></h4>
+<a href="/blog/<%=i %>" class="meer">meer lezen...</a>
+<br>
+<%
+var arrayLength = postsArray[i].tags.length;
+for(var j=0; j<arrayLength; j++){
+%>
+<span><%=postsArray[i].tags[j] %></span>
+<%
+}
+%>

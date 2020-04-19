@@ -1,0 +1,31 @@
+<% include header %>
+<div class="detail">
+<a href="/" class="homepageback">go back to homepage</a>
+<h2><%=post.name %></h2>
+<h4 class="author"><%=post.author %></h4>
+<h3><%=post.date %></h3>
+<br>
+<h3><%=post.subtitle %></h3>
+
+<%
+var arrayLength = post.tags.length;
+for(var j=0; j<arrayLength; j++){
+%>
+<span class="tags"><%=post.tags[j] %></span>
+<%
+}
+%>
+<p class="detailpost"><%-post.content %></p>
+<img src="<%-post.imageURL %>" alt=post.imageALT class="blog-image">
+<%
+postId = parseInt(postId);
+lastPostId = parseInt(lastPostId);
+%>
+<% if (postId > 0){ %>
+<a class="knop" href="/blog/<%=postId-1%>">Previous</a>
+<% } %>
+<% if (postId < lastPostId){ %>
+<a class="knop" href="/blog/<%=postId+1%>">Next</a>
+<% } %>
+</div>
+<% include footer %>

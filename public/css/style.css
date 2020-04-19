@@ -1,0 +1,135 @@
+
+body{
+  font-family: sans-serif;
+  background-color: #efefef
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+h2{
+  text-align: left;
+  padding: 1vw;
+}
+h3{
+  margin-top: -10vh;
+  text-align: right;
+  padding: 1.2vw;
+}
+h4{
+  text-align: left;
+  padding: 2vw;
+  margin-top: -6vh;
+  margin-bottom: -3vh;
+  font-weight: 200;
+}
+nav{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+span{
+  color: #72050F;
+  padding: 2vw;
+}
+.tags{
+  text-align: center;
+  margin: auto 5vw auto 5vw;
+  color: black;
+}
+.nav{
+  font-size: 20pt;
+  padding: 7vw;
+}
+.nav:hover{
+  color: maroon;
+  text-decoration: underline;
+}
+.post{
+  background: linear-gradient(90deg, rgba(56,187,230,1) 0%, rgba(173,216,230,1) 100%);
+  text-align: center;
+  margin: 2vh 10vw auto 10vw;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+}
+.detailpost{
+  background: linear-gradient(90deg, rgba(56,187,230,1) 0%, rgba(173,216,230,1) 100%);
+  color: black;
+  padding: 2vw;
+  margin: 2vh 5vw 5vh 5vw;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+}
+.footer{
+  text-align: center;
+}
+.intro{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  margin: 2vh 30vw auto 30vw;
+  background: linear-gradient(90deg, rgba(10,17,42,1) 0%, rgba(27,43,99,1) 100%);
+  padding: 5vw;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+}
+.meer{
+  color: white;
+  margin-left: -48vw;
+}
+.meer:hover{
+  color: #19364B;
+}
+.post{
+  margin: 2vh 20vw auto 20vw;
+}
+.detail{
+  margin: auto 10vw auto 10vw;
+}
+.homepageback{
+  margin-left: 1vw;
+}
+.homepageback:hover{
+  color: lightblue;
+}
+.author{
+  color: #19364B;
+  text-decoration: underline;
+}
+.knop{
+  margin: auto 15vw auto 15vw;
+  text-align: center;
+  padding: 1vw;
+  background-color: lightblue;
+  box-shadow: 5px 5px black;
+}
+.knop:hover{
+  background-color: #19364B;
+  color:white;
+  box-shadow: 5px 5px black;
+}
+.blog-image{
+  box-shadow: 5px 5px black;
+  margin: auto 25vw auto 25vw;
+  border-radius: 10px;
+  width: 300px;
+  display: block;
+}
+@media screen and (max-width:800px) {
+  .post{
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .intro{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  h3{
+    margin: auto;
+  }
+  h4{
+    margin: auto;
+  }
+}

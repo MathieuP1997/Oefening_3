@@ -1,0 +1,19 @@
+<% include header %>
+<% include nav %>
+<p class="intro"> Hier onder vindt je een diplay van al onze kunstwerken die momenteel worden tentoon gestald.</p>
+<div class="blogpost">
+<%
+var length = postsArray.length;
+for(var i=0; i<length; i++){
+  %>
+<article class="post">
+  <img src="imageURL" alt="">
+<% include blogpost %>
+</article>
+<%
+}
+%>
+</div>
+<% include footer %>
+</body>
+</html>
